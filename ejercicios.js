@@ -77,3 +77,30 @@ console.log("Paso 5 -> 12 - 4 =", resultadoFinal);
 
 // Resultado final
 console.log("Resultado final:", resultadoFinal);
+
+
+
+//Punto D
+
+//Ejercico 2: Conversor de tiempo
+
+let segundos = 7200;
+
+let minutos = segundos / 60;
+let horas = segundos / 3600;
+let dias = segundos / 86400;
+
+console.log("segundos" + segundos);
+console.log("minutos" + minutos);
+console.log("horas" + horas);
+console.log("dias" + dias);
+
+alert(
+  "Segundos: " + segundos +
+  "\nMinutos: " + minutos +
+  "\nHoras: " + horas +
+  "\nDías: " + dias
+);
+
+
+//Ejercicio 4
