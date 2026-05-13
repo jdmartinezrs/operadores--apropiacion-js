@@ -14,11 +14,11 @@ contadorVisitas = dia1
 
 let errorRegistro = contadorVisitas - 10
 
- contadorVisitas = errorRegistro ;
+contadorVisitas = errorRegistro;
 
 let multiplicacionVisitas = contadorVisitas * 2;
 
- contadorVisitas = multiplicacionVisitas;
+contadorVisitas = multiplicacionVisitas;
 
 console.log(contadorVisitas);
 
@@ -122,8 +122,61 @@ console.log("La suma de las notas es: " + suma);
 console.log("El promedio de las notas es: " + promedio);
 console.log("El resultado de la operacion es : " + operacion);
 
-alert (
-"La suma de las notas es: " + suma +
-"\nEl promedio de las notas es: " + promedio +
-"\nEl resultado de la operacion es : " + operacion
+alert(
+  "La suma de las notas es: " + suma +
+  "\nEl promedio de las notas es: " + promedio +
+  "\nEl resultado de la operacion es : " + operacion
 );
+/**Ejercico 1: Calculadora de gastos de viaje 
+Un grupo de amigos realiza un viaje con los siguientes costos fijos: 
+• Transporte: $120.000 
+• Alojamiento: $200.000 
+• Alimentación: $150.000 
+El total debe dividirse en partes iguales entre 4 personas. Además, cada persona  entregará $130.000 y se debe calcular el sobrante. 
+Requerimiento: 
+• Usa constantes para los costos y la cantidad de personas. 
+• Usa variables para el total, el aporte individual y el sobrante. 
+ */
+
+const transporte = 120000
+const alojamiento = 200000
+const alimentacion = 150000
+const cantidadPersonas = 4
+
+let aporteIndividual = (transporte + alojamiento + alimentacion) / cantidadPersonas
+console.log(aporteIndividual);
+
+let aporte = 130000
+
+let restante = aporte- aporteIndividual 
+
+console.log(restante)
+
+
+/**Ejercicio 3: Producción de una fábrica 
+Una máquina produce 250 piezas por hora. 
+En 8 horas de trabajo se necesita calcular: 
+• El total de piezas fabricadas. 
+• Cuántas cajas de 12 piezas se llenan.
+GFPI-F-135 V04 
+  
+
+• Cuántas piezas quedan sueltas. 
+Requerimiento: 
+• Usa constantes para la producción por hora, las horas trabajadas y la capacidad de las cajas. 
+• Usa variables para el total de piezas, cajas llenas y piezas sobrantes. 
+ */
+
+const produccionPiezasMaquinaHora = 250
+const horasTrabajadas = 8;
+const capacidadCaja = 12;
+
+let totalPiezasFabricadas = produccionPiezasMaquinaHora * horasTrabajadas
+
+let totalCajasLlenadas = Math.floor(totalPiezasFabricadas / capacidadCaja)
+
+let piezasSobrantes = totalPiezasFabricadas % capacidadCaja;
+
+console.log("Total piezas fabricadas:", totalPiezasFabricadas);
+console.log("Cajas llenas:", totalCajasLlenadas);
+console.log("Piezas sobrantes:", piezasSobrantes);
