@@ -84,7 +84,7 @@ console.log("Resultado final:", resultadoFinal);
 
 //Ejercico 2: Conversor de tiempo
 
-let segundos = 7200;
+const segundos = 7200;
 
 let minutos = segundos / 60;
 let horas = segundos / 3600;
@@ -103,4 +103,27 @@ alert(
 );
 
 
-//Ejercicio 4
+//Ejercicio 4: Estadisticas de calificaciones
+const nota1 = 4.5;
+const nota2 = 3.8;
+const nota3 = 2.9;
+const nota4 = 4.0;
+
+let suma = nota1 + nota2 + nota3 + nota4;
+let promedio = (nota1 + nota2 + nota3 + nota4) / 3;
+let nota = (nota1 + nota2) * (nota3 + nota4) / 2;
+
+console.log("La primera nota es: " + nota1);
+console.log("La segunda nota es: " + nota2);
+console.log("La tercera nota es: " + nota3);
+console.log("La cuarta nota es: " + nota4);
+
+console.log("La suma de las notas es: " + suma);
+console.log("El promedio de las notas es: " + promedio);
+console.log("El resultado de la operacion es : " + nota);
+
+alert (
+"La suma de las notas es: " + suma +
+"\nEl promedio de las notas es: " + promedio +
+"\nEl resultado de la operacion es : " + nota
+);
