@@ -20,7 +20,7 @@ let multiplicacionVisitas = contadorVisitas * 2;
 
  contadorVisitas = multiplicacionVisitas;
 
-console.log(contadorVisitas)
+console.log(contadorVisitas);
 
 // 1. Programa para calcular el área y el perímetro de un terreno rectangular
 
@@ -41,14 +41,14 @@ alert(
 
 // 2. Programa para calcular el promedio de tres notas
 
-let nota1 = parseFloat(prompt("Ingrese la primera nota:"));
-let nota2 = parseFloat(prompt("Ingrese la segunda nota:"));
-let nota3 = parseFloat(prompt("Ingrese la tercera nota:"));
+let nota01 = parseFloat(prompt("Ingrese la primera nota:"));
+let nota02 = parseFloat(prompt("Ingrese la segunda nota:"));
+let nota03 = parseFloat(prompt("Ingrese la tercera nota:"));
 
-let promedio = (nota1 + nota2 + nota3) / 3;
-console.log("El promedio del estudiante es: " + promedio);
+let promedio1 = (nota01 + nota02 + nota03) / 3;
+console.log("El promedio del estudiante es: " + promedio1);
 
-alert("El promedio del estudiante es: " + promedio);
+alert("El promedio del estudiante es: " + promedio1);
 
 /**Se tiene la expresión matemática siguiente: 
 (20+10)/5+3∗2−4(20 + 10) / 5 + 3 * 2 - 4(20+10)/5+3∗2−4  
@@ -68,11 +68,11 @@ let multiplicacion = 3 * 2;
 console.log("Paso 3 -> 3 * 2 =", multiplicacion);
 
 // Paso 4: Resolver suma
-let suma = division + multiplicacion;
-console.log("Paso 4 -> 6 + 6 =", suma);
+let suma1 = division + multiplicacion;
+console.log("Paso 4 -> 6 + 6 =", suma1);
 
 // Paso 5: Resolver resta
-let resultadoFinal = suma - 4;
+let resultadoFinal = suma1 - 4;
 console.log("Paso 5 -> 12 - 4 =", resultadoFinal);
 
 // Resultado final
@@ -110,8 +110,8 @@ const nota3 = 2.9;
 const nota4 = 4.0;
 
 let suma = nota1 + nota2 + nota3 + nota4;
-let promedio = (nota1 + nota2 + nota3 + nota4) / 3;
-let nota = (nota1 + nota2) * (nota3 + nota4) / 2;
+let promedio = suma / 3;
+let operacion = (nota1 + nota2) * (nota3 + nota4) / 2;
 
 console.log("La primera nota es: " + nota1);
 console.log("La segunda nota es: " + nota2);
@@ -120,10 +120,10 @@ console.log("La cuarta nota es: " + nota4);
 
 console.log("La suma de las notas es: " + suma);
 console.log("El promedio de las notas es: " + promedio);
-console.log("El resultado de la operacion es : " + nota);
+console.log("El resultado de la operacion es : " + operacion);
 
 alert (
 "La suma de las notas es: " + suma +
 "\nEl promedio de las notas es: " + promedio +
-"\nEl resultado de la operacion es : " + nota
+"\nEl resultado de la operacion es : " + operacion
 );
